@@ -265,3 +265,6 @@ export function getStats() {
     wonDeals: closedWon,
   };
 }
+
+// Re-export types
+export type { Contact, Deal, Activity, UserSettings } from './types';

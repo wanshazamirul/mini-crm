@@ -1,5 +1,3 @@
-import { StatCardSkeleton } from './stat-card-skeleton';
-
 interface StatCardProps {
   label: string;
   value: string | number;
@@ -29,7 +27,7 @@ export function StatCard({ label, value, change, trend, loading }: StatCardProps
   );
 }
 
-export function StatCardSkeleton() {
+function StatCardSkeleton() {
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6 animate-pulse">
       <div className="flex items-center justify-between mb-4">
