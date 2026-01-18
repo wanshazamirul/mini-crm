@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getStats, getActivities } from '@/lib/data';
+import { getStats, getActivities, type Activity } from '@/lib/data';
 import { StatCard } from '@/components/dashboard/stat-card';
 import { RecentActivity } from '@/components/dashboard/recent-activity';
 
@@ -12,7 +12,7 @@ export default function DashboardPage() {
     pipelineValue: 0,
     wonDeals: 0,
   });
-  const [activities, setActivities] = useState([]);
+  const [activities, setActivities] = useState<Activity[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

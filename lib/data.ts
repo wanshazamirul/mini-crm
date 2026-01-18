@@ -97,6 +97,9 @@ const initialSettings: UserSettings = {
   theme: 'light',
   companyName: 'MiniCRM Inc',
   notifications: true,
+  emailAlerts: true,
+  currency: 'USD',
+  language: 'en',
 };
 
 // LocalStorage keys

@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react';
 import { SalesChart } from '@/components/reports/sales-chart';
 import { DealTrendChart } from '@/components/reports/deal-trend-chart';
 import { ContactStats } from '@/components/reports/contact-stats';
-import { getDeals } from '@/lib/data';
-import type { Deal } from '@/lib/data';
+import { getDeals, type Deal } from '@/lib/data';
 
 export default function ReportsPage() {
   const [deals, setDeals] = useState<Deal[]>([]);

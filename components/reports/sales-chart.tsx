@@ -1,6 +1,6 @@
 'use client';
 
-import { Deal } from '@/lib/data';
+import type { Deal } from '@/lib/data';
 import { formatCurrency } from '@/lib/utils';
 
 interface SalesChartProps {

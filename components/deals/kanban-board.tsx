@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Deal } from '@/lib/data';
+import type { Deal } from '@/lib/data';
+import { getDeals } from '@/lib/data';
 import { KanbanColumn } from './kanban-column';
 import { DealModal } from './deal-modal';
 
@@ -22,7 +23,7 @@ export function KanbanBoard() {
 
   useEffect(() => {
     setTimeout(() => {
-      const data = Deal.getDeals();
+      const data = getDeals();
       setDeals(data);
       setLoading(false);
     }, 1000);
@@ -34,7 +35,7 @@ export function KanbanBoard() {
   };
 
   const handleSave = () => {
-    setDeals(Deal.getDeals());
+    setDeals(getDeals());
     setModalOpen(false);
     setEditingDeal(null);
   };

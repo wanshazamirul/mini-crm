@@ -41,4 +41,7 @@ export interface UserSettings {
   theme: 'light' | 'dark';
   companyName: string;
   notifications: boolean;
+  emailAlerts: boolean;
+  currency: 'USD' | 'EUR' | 'GBP';
+  language: 'en' | 'es' | 'fr';
 }

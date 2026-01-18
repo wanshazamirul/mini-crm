@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { X } from 'lucide-react';
-import { createDeal, updateDeal, type Deal, getContacts } from '@/lib/data';
+import { createDeal, updateDeal, getContacts, type Deal } from '@/lib/data';
 
 interface DealModalProps {
   open: boolean;
