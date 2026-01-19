@@ -163,7 +163,7 @@ export function ContactDetail({ contactId }: { contactId: string }) {
               <>
                 <button
                   onClick={handleSave}
-                  className="px-4 py-2 bg-green-600 text-white rounded-md text-sm font-medium hover:bg-green-700"
+                  className="px-4 py-2 bg-green-600 text-white rounded-md text-sm font-medium hover:bg-green-700 shadow-sm hover:shadow transition-all"
                 >
                   Save
                 </button>
