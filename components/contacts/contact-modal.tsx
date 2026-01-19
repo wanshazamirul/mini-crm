@@ -241,7 +241,7 @@ export function ContactModal({ open, onClose, contact, onSave }: ContactModalPro
             <button
               type="submit"
               disabled={submitting}
-              className="px-6 py-2 bg-sfdc-blue-600 text-white rounded-md text-sm font-medium hover:bg-sfdc-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow transition-all font-semibold"
+              className="px-4 py-2 border border-sfdc-blue-600 text-sfdc-blue-600 rounded-md text-sm font-medium hover:bg-sfdc-blue-50 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {submitting ? 'Saving...' : isEditing ? 'Update' : 'Create Contact'}
             </button>
