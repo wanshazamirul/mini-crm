@@ -22,6 +22,13 @@ export default function SettingsPage() {
       const savedSettings = getSettings();
       setSettings(savedSettings);
       setLoading(false);
+
+      // Apply theme on load
+      if (savedSettings.theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     }, 800);
   }, []);
 
@@ -29,6 +36,14 @@ export default function SettingsPage() {
     setSaving(true);
     setTimeout(() => {
       updateSettings(settings);
+
+      // Apply theme
+      if (settings.theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+
       setSaving(false);
     }, 500);
   };

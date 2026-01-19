@@ -6,6 +6,11 @@
     --foreground: 222.2 84% 4.9%;
   }
 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+
   * {
     border-color: rgb(229 231 235);
   }
@@ -13,5 +18,14 @@
   body {
     background-color: rgb(249 250 251);
     color: rgb(17 24 39);
+  }
+
+  .dark body {
+    background-color: rgb(17 24 39);
+    color: rgb(243 244 246);
+  }
+
+  .dark * {
+    border-color: rgb(55 65 81);
   }
 }
